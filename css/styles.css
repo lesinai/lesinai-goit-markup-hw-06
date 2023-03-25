@@ -595,7 +595,31 @@
   opacity:0;
   pointer-events:none;
  }
-  
+  .custom-checkbox {
+   display: inline-block;
+   
+   width: 16px;
+   height: 16px;
+   border: 1px solid rgba(46, 47, 66, 0.4);
+   border-radius: 2px;
+  }
+  .checkbox:checked+ .custom-checkbox {
+  background-image: url(../images/Butaforbutton.svg);
+  background-position: center;
+  }
+    /* Visually hidden */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
    /* колір основного тексту #ffffff */
 
    /* колір бекграунду ефектів солюжн #2E2F42 */
