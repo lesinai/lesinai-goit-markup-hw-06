@@ -565,6 +565,12 @@
     background: rgba(46, 47, 66, 0.4);
     transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
+     .is-hidden {
+       visibility: hidden;
+       opacity: 0;
+       pointer-events: none;
+     }
+
    .modalwindow {
     position: absolute;
       width: 408px;
@@ -573,14 +579,20 @@
       top:50%;
       background-color: #F4F4FD;
       transform: translate(-50%, -50%);
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+      padding: 72px 24px 24px;
    }
 
   .button-close {
     position: absolute;
     width: 24px;
     height: 24px;
-     right: 24px;
+    right: 24px;
     top: 24px;
+    transition: /*background*/ 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 0;
+    cursor: pointer;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -590,11 +602,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
 
   }
- .is-hidden {
-  visibility:hidden;
-  opacity:0;
-  pointer-events:none;
- }
+  .button-close:hover,
+  .button-close:focus {
+      background: #404bbf;
+      border: transparent;
+    }
+
+ 
   .custom-checkbox {
    display: inline-block;
    
