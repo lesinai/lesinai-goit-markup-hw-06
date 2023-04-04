@@ -87,6 +87,7 @@ header {
 .email-style:hover .email-style:focus {
   color: #404bbf;
 }
+
 /* site-nav */
 .header-list {
   display: flex;
@@ -551,10 +552,10 @@ a {
 }
 
 .infoot-subs {
-  margin-left:auto ;
+  margin-left: auto;
 }
 .subs-input {
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
@@ -565,10 +566,10 @@ a {
 }
 
 .subs-input:focus {
-border-color: #4d5ae5;
+  border-color: #4d5ae5;
 }
 .subs-input::placeholder {
-font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -576,17 +577,17 @@ font-family: 'Roboto';
   color: #ffffff;
 }
 .subsbut {
-  background: #4D5AE5;
-    border-radius: 4px;
-    display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 8px 24px;
-      gap: 16px;
-      border: none;
-      color: white;
-      transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background: #4d5ae5;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 16px;
+  border: none;
+  color: white;
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subsbut:hover,
 .subsbut:focus {
@@ -778,7 +779,7 @@ font-family: 'Roboto';
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
